@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMake</title>
+    
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="stylesheets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/fonts/material-icons.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/Pretty-Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
+    <link rel="stylesheet" href="stylesheets/Pretty-Registration-Form.css">
+</head>
+
+<body ng-app="myApp">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-link" href="#"><img src="images/logo.jpg" id="logo"><strong>R</strong>esu<strong>M</strong>ake </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a href="http://localhost:3000/">Blog </a></li>
+                    <li role="presentation"><a href="#">Help </a></li>
+                    <li role="presentation" ng-hide='signinForm.$submitted || signupForm.$submitted'><a id='signin' data-toggle='modal' href="#" data-target="#modal1">Log In/Sign Up</a></li>
+                    <li role="presentation"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="promo">
+        <div class="jumbotron">
+            <h1>Create your professional resumé</h1>
+            <p><a class="btn btn-info btn-lg" role="button" href="http://localhost:3000/design">Create a design</a></p>
+        </div>
+    </div>
+    <div class="container site-section" id="welcome">
+        <h2>Welcome to <strong>R</strong>esu<strong>M</strong>ake</h2>
+        <p>We designed a resume builder for free that allows you to enter everything from your education and work experience to additional skills and other accomplishments so you can demonstrate your value to employers. You can also modify, preview and save
+            drafts of your documents using our resume builder so that you can edit your resume depending on the job or position you are applying for. Our resume builder includes a built-in repository of expertise including helpful examples and tips that
+            will turn you into a veritable resume maker. Once you're done entering your information, you will have the option to choose from several professional templates. </p>
+    </div>
+    <div class="dark-section">
+        <div class="container site-section" id="why">
+            <h2>How the&nbsp;Resume Builder Works </h2>
+            <div class="row">
+                <div class="col-md-4 item"><i class="material-icons">timer</i>
+                    <h2>Faster </h2>
+                    <p>The fastest way to make a free professional resume. </p>
+                </div>
+                <div class="col-md-4 item"><i class="fa fa-gears"></i>
+                    <h2>Simpler</h2>
+                    <p>No writing experience? No problem! Just point, click, and create. </p>
+                </div>
+                <div class="col-md-4 item"><i class="material-icons">work</i>
+                    <h2>Professional </h2>
+                    <p>Our HR-approved resume templates will get you more callbacks. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container site-section" id="welcome">
+        <h2>Templates </h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="images/1387.jpg" target="_blank" data-lightbox="cvs"><img class="img-responsive" src="images/1387.jpg"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="images/OTBT2R0.jpg" target="_blank" data-lightbox="cvs"><img class="img-responsive" src="images/OTBT2R0.jpg"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="images/Curriculum vitae template2-01.jpg" target="_blank" data-lightbox="cvs"><img class="img-responsive" src="images/Curriculum vitae template2-01.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 footer-navigation">
+                    <h3><a href="http://localhost:3000/"><strong>R</strong>esu<strong>M</strong>ake</a></h3>
+                    <p class="links"><a href="http://localhost:3000/">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Contact us</a></p>
+                    <p class="company-name">ResuMake © 2017 </p>
+                </div>
+                <div class="col-md-4 col-sm-6 footer-contacts">
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                        <p>ABV-IIITM Gwalior MP India</p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left"> +918959682938</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p>abhinava.srirajan@gmail.com </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-4 footer-about">
+                    <h4>About the company</h4>
+                    <p>We center our efforts on providing THE BEST RESULTS to our users, with only one thing in mind:&nbsp;<strong>to help them get a job</strong>.. </p>
+                    <div class="social-links social-icons"><a href="https://www.facebook.com/abhinav.sanga" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/AbhinavSanga" target="_blank"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/abhinav-sanga-21a285129/" target="_blank"><i class="fa fa-linkedin"></i></a><a target="_blank" href="#"><i class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+<div role="dialog" tabindex="-1" class="modal fade" id="modal1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="text-center modal-title">User Authentication</h4></div>
+            <div class="modal-body">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#logintab-1" role="tab" data-toggle="tab">Sign In</a></li>
+                        <li><a href="#logintab-2" role="tab" data-toggle="tab">Sign Up</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="logintab-1">
+                            <form name='siginForm' method="post" action="/users/login" novalidate>
+                                <input class="input-lg mbi form-control" type="email" placeholder="Email">
+                                <input class="input-lg mbi form-control" type="password" placeholder="Password">
+                                <p class="mfi">Don't have an account? <strong>Sign Up</strong></p>
+                                <div class="modaldiv">
+                                    <button class="btn btn-default mfib" type="button" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary mfib" type="submit">Sign In</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="logintab-2">
+                            <form name='signupForm' method="post" action="/users/signup" novalidate>
+                                <input class="input-lg mbi form-control" type="text" placeholder="Username" name="userrname">
+                                <input class="input-lg mbi form-control" type="email" placeholder="Email" name="eemail">
+                                <input class="input-lg mbi form-control" type="password" placeholder="Password" name="paassword">
+                                <input class="input-lg mbi form-control" type="password" placeholder="Confirm Password" name="paassword2">
+                                <p class="mfi">Already have an account? <strong>Login</strong></p>
+                                <div class="modaldiv">
+                                    <button class="btn btn-default mfib" type="button" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary mfib" type="submit">Create Account</button>
+                                </div>
+                            </form>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+    
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="javascripts/ang.js"></script>
+    <script src="javascripts/modal.js"></script>
+
+
+</body>
+
+</html>

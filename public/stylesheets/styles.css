@@ -1,0 +1,142 @@
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#logo{
+  max-height:42px;
+  margin-right:10px;
+  margin-top:-3px;
+  display:inline-block;
+}
+
+#promo{
+  text-align:center;
+  padding:2em;
+  background:url(/images/79.jpg) no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover;
+  height:450px;
+}
+
+#promo .jumbotron{
+  border-radius:020px;
+  padding:40px;
+  background-color:rgba(255,255,255,0.70);
+  max-width:800px;
+  margin:60px auto;
+}
+
+.jumbotron h1{
+  padding-bottom:20px;
+  font-weight:normal;
+  font-size:49px;
+}
+
+@media (max-width:991px) {
+  #promo .jumbotron{
+    padding:20px;
+  }
+}
+
+@media (max-width:991px) {
+  #promo{
+    padding:20px;
+  }
+}
+
+.dark-section{
+  background-color:#d8effb;
+}
+
+.site-section{
+  text-align:center;
+  padding-bottom:70px;
+}
+
+.site-section h2{
+  font-weight:normal;
+  margin-bottom:30px;
+  margin-top:60px;
+}
+
+#welcome p{
+  max-width:800px;
+  font-size:20px;
+  margin:0 auto;
+  color:#666;
+}
+
+#why .item{
+  padding-top:36px;
+}
+
+#why .item p{
+  color:#6f767a;
+}
+
+#why .item i{
+  font-size:45px;
+  color:rgb(77,214,67);
+}
+
+#why .item h2{
+  font-weight:normal;
+  margin-top:13px;
+  margin-bottom:20px;
+  font-size:24px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+  border-color:transparent;
+  background-color:rgb(184,241,251);
+}
+
+#tabel{
+  margin-top:80px;
+}
+
+input[type="radio"]{
+  margin-top:-12px;
+  vertical-align:middle;
+}
+
+#txtarea{
+  font-size:15px;
+  font-weight:normal;
+}
+
+input.form-control{
+  font-weight:normal;
+}
+
+.modal-footer{
+  padding:20px;
+  text-align:center;
+  border-top:1px solid #e5e5e5;
+}
+
+.mfi{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 15px;
+
+}
+
+div.modal-footer{
+  margin: -18px;
+}
+
+.modaldiv{
+  text-align: center;
+}
+
+.mbi{
+  display:block;
+  margin:20px;
+  width:92%;
+}
+
+.mfib{
+  margin-left: 10px; 
+}
