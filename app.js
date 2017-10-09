@@ -107,6 +107,7 @@ app.use(function(err, req, res, next) {
 var http = require("http");
 setInterval(function() {
     http.get("http://resumake-0515.herokuapp.com");
+    console.log("executed");
 }, 300000); // every 5 minutes (300000)
 
 module.exports = app;
