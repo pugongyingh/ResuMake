@@ -22,7 +22,7 @@ var users = require('./routes/users');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost/cvdetails', {useMongoClient : true});
+mongoose.connect('mongodb://abhi_0515:beapartofmine@05@ds115045.mlab.com:15045/resume-0515', {useMongoClient : true});
 var db = mongoose.connection;
 db.on('error',console.error);
 db.once('open',function(){
