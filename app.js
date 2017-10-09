@@ -104,7 +104,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var http = require("http");
+var http = require('http');
 setInterval(function() {
     http.get("http://resumake-0515.herokuapp.com");
     console.log("executed");
