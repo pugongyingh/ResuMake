@@ -13,7 +13,7 @@ router.get('/design', function(req, res, next) {
 	res.render('design');
 });
 
-router.post('/balloon', function(req, res, next){
+router.post('/detailsSaved', function(req, res, next){
 
 	console.log('entered the post');
 
