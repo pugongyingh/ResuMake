@@ -67,7 +67,7 @@
                                     <label class="control-label" for="name-input-field">Country </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" name="country" ng-model="formModel.countryName">
+                                    <input class="form-control" type="text" name="country" ng-model="formModel.country">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -75,7 +75,7 @@
                                     <label class="control-label" for="name-input-field">Zip </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" name="zipCode" ng-model="formModel.zip">
+                                    <input class="form-control" type="text" name="zipCode" ng-model="formModel.zipCode">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -115,7 +115,7 @@
                                     <label class="control-label" for="email-input-field">Email </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="email" name="email" ng-model="formModel.mailid">
+                                    <input class="form-control" type="email" name="email" ng-model="formModel.email">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -123,7 +123,7 @@
                                     <label class="control-label" for="name-input-field">Phone </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" name="phone" ng-model="formModel.phnNum">
+                                    <input class="form-control" type="text" name="phone" ng-model="formModel.phone">
                                 </div>
                             </div>
                             <button class="btn btn-primary button" type="submit">Save &amp; Continue </button>
@@ -141,7 +141,7 @@
                                     <label class="control-label" for="name-input-field">School Name </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.schoolName">
+                                    <input class="form-control" type="text" name="schoolName" ng-model="formModel.schoolName">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -149,7 +149,7 @@
                                     <label class="control-label" for="name-input-field">City </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.ciityNa">
+                                    <input class="form-control" type="text"  name="schoolCity" ng-model="formModel.schoolCity">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -157,7 +157,7 @@
                                     <label class="control-label" for="name-input-field">Country </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.cuntry">
+                                    <input class="form-control" type="text" name="schoolCountry" ng-model="formModel.schoolCountry">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -165,7 +165,7 @@
                                     <label class="control-label" for="name-input-field">State/Province </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.statepro">
+                                    <input class="form-control" type="text" name="schoolState" ng-model="formModel.schoolState">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -173,7 +173,7 @@
                                     <label class="control-label" for="name-input-field">Still in school?</label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <select class="form-control" ng-model="formModel.inSchool">
+                                    <select class="form-control" name="inSchool" ng-model="formModel.inSchool">
                                         <optgroup>
                                             <option value="12" selected>N/A</option>
                                             <option value="13">Yes</option>
@@ -195,7 +195,7 @@
                                     <label class="control-label" for="name-input-field">Employer Name</label>
                                 </div>
                                 <div class="col-md-offset-0 col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.employerName">
+                                    <input class="form-control" type="text" name="employerName" ng-model="formModel.employerName">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -203,7 +203,7 @@
                                     <label class="control-label" for="name-input-field">Industry </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.industry">
+                                    <input class="form-control" type="text" name="industry" ng-model="formModel.industry">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -211,7 +211,7 @@
                                     <label class="control-label" for="name-input-field">City </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.ctyName">
+                                    <input class="form-control" type="text" name="employerCity" ng-model="formModel.ctyName">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -219,7 +219,7 @@
                                     <label class="control-label" for="name-input-field">Country </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.cntry">
+                                    <input class="form-control" type="text" name="employerCountry" ng-model="formModel.cntry">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -227,7 +227,7 @@
                                     <label class="control-label" for="name-input-field">State/Province </label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.statePr">
+                                    <input class="form-control" type="text" name="employerState" ng-model="formModel.statePr">
                                 </div>
                             </div><button class="btn btn-primary button" type="button" ng-click="onSubmit()">Save &amp; Continue </button></form>
                         <form class="form-horizontal custom-form">
@@ -237,7 +237,7 @@
                                     <label class="control-label" for="name-input-field">Position Title</label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="text" ng-model="formModel.posTitle">
+                                    <input class="form-control" type="text" name="positionTitle" ng-model="formModel.posTitle">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -245,7 +245,7 @@
                                     <label class="control-label" for="name-input-field">Start date</label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <input class="form-control" type="date" ng-model="formModel.startDate">
+                                    <input class="form-control" type="date" name="startDate" ng-model="formModel.startDate">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -253,7 +253,7 @@
                                     <label class="control-label" for="name-input-field">Still work here?</label>
                                 </div>
                                 <div class="col-sm-6 input-column">
-                                    <div class="radio radio-inline">
+                                    <div class="radio radio-inline" name="inWork">
                                         <label class="control-label">
                                             <input type="radio" class="rad">Yes</label>
                                     </div>
@@ -276,7 +276,7 @@
                                     <label class="control-label" for="name-input-field">Write your own information (Optional)</label>
                                 </div>
                                 <div class="col-sm-7 input-column">
-                                    <textarea class="form-control" placeholder="Enter your additional skills in individual points." id="txtarea" rows="7" columns="8" ng-model="formModel.xtraskills"></textarea>
+                                    <textarea class="form-control" placeholder="Enter your additional skills in individual points." id="txtarea" rows="7" columns="8" name="addiSkills" ng-model="formModel.xtraskills"></textarea>
                                 </div>
                             </div><button class="btn btn-primary button" type="button" ng-click="onSubmit()">Save &amp; Continue </button></form>
                     </div>
