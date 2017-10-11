@@ -3,6 +3,8 @@ var router = express.Router();
 var path = require('path');
 var mongoose = require('mongoose');
 var ResumeData = require('../models/resume-detail');
+var HtmlDocx = require('html-docx-js');
+var fs = require('fs');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -49,6 +51,18 @@ router.post('/detailsSaved', function(req, res, next){
 			throw err;
 		else
 			res.send('Saved Successfully');
+	});
+});
+
+var inputFile = process.argv[2];
+var outputFile = process.argv[3];
+
+fs.readFile(inputFile,'utf-8', function(err,html){
+	if (err) throw err;
+
+	var docx = HtmlDocx.asBlob(html);
+	fs.writeFile(outputFile,docx,function(err){
+		if(err) throw err;
 	});
 });
 
