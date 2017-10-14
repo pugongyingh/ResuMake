@@ -27,8 +27,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li role="presentation"><a href="https://resumake-0515.herokuapp.com/">Blog </a></li>
                     <li role="presentation"><a href="#">Help </a></li>
-                    <li role="presentation"><a data-toggle='modal' href="#" data-target='#modal1'>Log In/Sign Up</a></li>
+                    <li role="presentation" ng-hide="loggedIn" ng-click="isLoggedIn()"><a data-toggle='modal' href="#" data-target='#modal1'>Log In/Sign Up</a></li>
                     <li role="presentation"><a href="#">Contact Us</a></li>
+                    <li role="presentation" ng-show="loggedIn" ng-click="logOut(); isLoggedIn()"><a href="#">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +45,7 @@
             <div class="tab-pane active" role="tabpanel" id="tab-1">
                 <div class="row register-form">
                     <div class="col-md-8 col-md-offset-2">
-                        <form action="/balloon" method="post" class="form-horizontal custom-form">
+                        <form action="/detailsSaved" method="post" class="form-horizontal custom-form">
                             <h1>Contact Info</h1>
                             <div class="form-group">
                                 <div class="col-sm-4 label-column">
@@ -126,7 +127,7 @@
                                     <input class="form-control" type="text" name="phone" ng-model="formModel.phone">
                                 </div>
                             </div>
-                            <button class="btn btn-primary button" type="button" href="https://resumake-0515.herokuapp.com/design#tab-2" ng-click="onSubmit()">Save &amp; Continue </button>
+                            <button class="btn btn-primary button" type="submit" href="#" ng-click="onSubmit()">Save &amp; Continue </button>
                         </form>
                     </div>
                 </div>

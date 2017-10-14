@@ -14,7 +14,7 @@ var Schema = mongoose.Schema;
 	address2: {type:'string', required: true},
 	email: {type:'string', required: true},
 	phone_no: {type:'number', required: true},
-	employer_name: {type:'string', required: true},
+	/* employer_name: {type:'string', required: true},
 	industry: {type:'string',required: true},
 	employer_city: {type:'string',required:true},
 	employer_country: {type:'string',required:true},
@@ -27,7 +27,7 @@ var Schema = mongoose.Schema;
 	school_state: {type:'string',required:true},
 	school_country: {type:'string',required:true},
 	still_in_school: {type:'boolean',required:true,default:false},
-	additional_skills: {type:'string',required:false}
+	additional_skills: {type:'string',required:false} */
 });
 
 	module.exports = mongoose.model('ResumeData',resumeDataSchema);
