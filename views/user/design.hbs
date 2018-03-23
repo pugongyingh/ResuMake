@@ -1,0 +1,251 @@
+<div id="tabel">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab-1" role="tab" data-toggle="tab">Contact Info</a></li>
+        <li><a href="#tab-2" role="tab" data-toggle="tab">Work Experience</a></li>
+        <li><a href="#tab-3" role="tab" data-toggle="tab">Education </a></li>
+        <li><a href="#tab-4" role="tab" data-toggle="tab">Additional Skills</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" role="tabpanel" id="tab-1">
+            <div class="row register-form">
+                <div class="col-md-8 col-md-offset-2">
+                    <form action="/resumedetail/detailsSaved" method="post" class="form-horizontal custom-form">
+                        <h1>Contact Info</h1>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">First Name </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="firstName" ng-model="formModel.firstName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Last Name </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="lastName" ng-model="formModel.lastName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Country </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="country" ng-model="formModel.country">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Zip </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="zipCode" ng-model="formModel.zipCode">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">City </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="cityName" ng-model="formModel.cityName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">State/Province </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="stateName" ng-model="formModel.stateName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Address Line 1</label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="address1" ng-model="formModel.address1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Address Line 2</label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="address2" ng-model="formModel.address2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="email-input-field">Email </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="email" name="email" ng-model="formModel.email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Phone </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="phone" ng-model="formModel.phone">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary button" type="submit" href="#" ng-click="onSubmit()">Save &amp; Continue </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="tab-2">
+            <div class="row register-form">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="form-horizontal custom-form">
+                        <h1>Employer Information</h1>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Employer Name</label>
+                            </div>
+                            <div class="col-md-offset-0 col-sm-6 input-column">
+                                <input class="form-control" type="text" name="employerName" ng-model="formModel.employerName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Industry </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="industry" ng-model="formModel.industry">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">City </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="employerCity" ng-model="formModel.employerCity">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Country </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="employerCountry" ng-model="formModel.employerCountry">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">State/Province </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="employerState" ng-model="formModel.employerState">
+                            </div>
+                        </div><button class="btn btn-primary button" type="button" ng-click="onSubmit()">Save &amp; Continue </button></form>
+                    <form class="form-horizontal custom-form">
+                        <h1>Position Information</h1>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Position Title</label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="positionTitle" ng-model="formModel.positionTitle">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Start date</label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="date" name="startDate" ng-model="formModel.startDate">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Still work here?</label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <div class="radio radio-inline" name="inWork" ng-model="formModel.inWork">
+                                    <label class="control-label">
+                                        <input type="radio" class="rad">Yes</label>
+                                </div>
+                                <div class="radio radio-inline">
+                                    <label class="control-label">
+                                        <input type="radio" class="rad">No</label>
+                                </div>
+                            </div>
+                        </div><button class="btn btn-primary button" type="button" href="https://resumake-0515.herokuapp.com/design#tab-3" ng-click="onSubmit()">Save &amp; Continue </button></form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="tab-3">
+            <div class="row register-form">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="form-horizontal custom-form">
+                        <h1>Education </h1>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">School Name </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="schoolName" ng-model="formModel.schoolName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">City </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text"  name="schoolCity" ng-model="formModel.schoolCity">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Country </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="schoolCountry" ng-model="formModel.schoolCountry">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">State/Province </label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <input class="form-control" type="text" name="schoolState" ng-model="formModel.schoolState">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Still in school?</label>
+                            </div>
+                            <div class="col-sm-6 input-column">
+                                <select class="form-control" name="inSchool" ng-model="formModel.inSchool">
+                                    <optgroup>
+                                        <option value="12" selected>N/A</option>
+                                        <option value="13">Yes</option>
+                                        <option value="14">No</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div><button class="btn btn-primary button" type="button" href="https://resumake-0515.herokuapp.com/design#tab-4" ng-click="onSubmit()">Save &amp; Continue </button></form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="tab-4">
+            <div class="row register-form">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="form-horizontal custom-form">
+                        <h1>Your Skills</h1>
+                        <div class="form-group">
+                            <div class="col-sm-4 label-column">
+                                <label class="control-label" for="name-input-field">Write your own information (Optional)</label>
+                            </div>
+                            <div class="col-sm-7 input-column">
+                                <textarea class="form-control" placeholder="Enter your additional skills in individual points." id="txtarea" rows="7" columns="8" name="addiSkills" ng-model="formModel.xtraskills"></textarea>
+                            </div>
+                        </div><button class="btn btn-primary button" type="button">Save &amp; Continue </button></form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

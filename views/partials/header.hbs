@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navb">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand navbar-link" href="/"><img src="/images/logo.jpg" id="logo"><strong>R</strong>esu<strong>M</strong>ake </a>
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="navcol-1">
+           <ul class="nav navbar-nav navbar-right">
+               <li role="presentation"><a href="#">Help</a></li>
+               <li role="presentation"><a href="#">Contact Us</a></li>
+               <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Management <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                            {{# if login }}
+                                    <li><a href="/user/design">Design</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/user/logout">Logout</a></li>
+                            {{ else }}
+                                    <!-- <li role="presentation"><a id='signin' data-toggle='modal' href="#" data-target="#modal1">Log In/Sign Up</a></li> -->
+                                    <li><a href="/user/signup">Sign up</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/user/signin">Sign in</a></li>
+                            {{/ if }}
+                     </ul>
+               </li>
+           </ul>
+        </div>
+    </div>
+</nav>

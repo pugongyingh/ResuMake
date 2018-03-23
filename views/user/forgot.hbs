@@ -1,0 +1,21 @@
+<div class="row recdiv">
+    <div class="col-md-4 col-md-offset-4">
+        <h3 class="hed">Password Recovery</h3>
+        {{#if hasErrors}}
+            <div class="alert alert-danger">
+                <ul>
+                    {{# each messages}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{/if}}
+        <form action="/user/forgot" method="post">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autofocus class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Reset Password</button>
+        </form>
+    </div>
+</div>

@@ -5,10 +5,25 @@ footer{
   width:100%;
   text-align:left;
   font:bold 16px sans-serif;
+  margin-top: 50px;
   padding:55px 0px;
-  margin-top:-30px;
   bottom:0;
   color:#fff;
+  position: static;
+}
+
+@media (min-width: 768px){
+  footer  {
+    position: static;
+    bottom: 0;
+  }
+}
+@media screen and (max-width:750px ){
+  footer {
+    position: static;
+    bottom: 0;
+
+  }
 }
 
 .footer-navigation h3{
