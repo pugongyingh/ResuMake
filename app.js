@@ -23,9 +23,8 @@ var userRoutes = require('./routes/user');
 
 var app = express();
 
-// mongoose.connect('mongodb://localhost/cvdetails', {useMongoClient : true});
-//mongoose.connect('mongodb://abhi0515:beapartofmine05@ds115045.mlab.com:15045/resume-0515', {useMongoClient : true});
-mongoose.connect('mongodb://127.0.0.1:27017/resumake');
+mongoose.connect('mongodb://abhi0515:beapartofmine05@ds115045.mlab.com:15045/resume-0515', {useMongoClient : true});
+//mongoose.connect('mongodb://127.0.0.1:27017/resumake', {useMongoClient : true});
 var db = mongoose.connection;
 db.on('error',console.error);
 db.once('open',function(){
@@ -122,12 +121,12 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-/*
+
 var http = require('http');
 setInterval(function() {
     http.get("http://resumake-0515.herokuapp.com");
     console.log("executed");
 }, 300000); // every 5 minutes (300000)
-*/
+
 
 module.exports = app;
