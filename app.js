@@ -23,7 +23,7 @@ var userRoutes = require('./routes/user');
 
 var app = express();
 
-mongoose.connect('mongodb://abhi0515:beapartofmine05@ds115045.mlab.com:15045/resume-0515', {useMongoClient : true});
+mongoose.connect('mongodb+srv://pgyh:mmmmmm88@cluster0-ddyp4.mongodb.net/test?retryWrites=true&w=majority', {useMongoClient : true});
 //mongoose.connect('mongodb://127.0.0.1:27017/resumake', {useMongoClient : true});
 var db = mongoose.connection;
 db.on('error',console.error);
